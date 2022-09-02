@@ -1,9 +1,9 @@
 Which of the following represents the largest group of biological classification? 	
-A: Kingdom
-B: Species
-C: Class
-D: Genus
-E: Phylum
+A. Kingdom
+B. Species
+C. Class
+D. Genus
+E. Phylum
 ANSWER: A
  	
 How many chromosomes does an individual human person have? 	
@@ -11,22 +11,22 @@ A. 23
 B. 46
 C. 64
 D. 82
-E: 2
+E. 2
 ANSWER: B
 
 Which of the following organisms is a vertabrate? 	
-A: Frogs
-B: Insects
-C: Earthworms
-D: Sea stars
-E: Drosophila melanogaster
+A. Frogs
+B. Insects
+C. Earthworms
+D. Sea stars
+E. Drosophila melanogaster
 ANSWER: A
 
 Many animals protect themselves with an exoskeleton. Which of the following is an example of an animal with an exoskeleton? 	
-A: Mollusk
-B: Bird
-C: Turtle
-D: Snake
-E: Fish
+A. Mollusk
+B. Bird
+C. Turtle
+D. Snake
+E. Fish
 ANSWER: A
 
