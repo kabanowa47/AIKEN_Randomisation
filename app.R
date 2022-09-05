@@ -1,16 +1,16 @@
 library(shiny)
 library(shinythemes)
 
-# Define UI for app that draws a histogram ----
+# Define UI for app
 ui <- fluidPage(
   theme = shinytheme("superhero"),
-  # App title ----
+  # App title
   titlePanel("AIKEN Randomisation"),
-  # Sidebar layout with input and output definitions ----
+  # Sidebar layout with input and output definitions
   sidebarLayout(
-    # Sidebar panel for inputs ----
+    # Sidebar panel for inputs
     sidebarPanel(
-      # Input: Select a file ----
+      # Input: Select a file
       fileInput(
         "file1",
         "Choose AIKEN quiz file",
@@ -19,10 +19,10 @@ ui <- fluidPage(
                    "text/comma-separated-values,text/plain",
                    ".txt")
       ),
-      # Horizontal line ----
+      # Horizontal line
       tags$hr(),
       
-      # Input: Select number of rows to display ----
+      # Input: Select before or sorted
       radioButtons(
         "disp",
         "Display",
@@ -34,12 +34,13 @@ ui <- fluidPage(
       downloadButton("downloadData", "Download")
       
     ),
-    # Main panel for displaying outputs ----
+    # Main panel for displaying outputs
     mainPanel(tabsetPanel(id = "tabset",
                           tabPanel(
                             "quiz", tableOutput("sorted")
                           )))
   ),
+  #Print info
   helpText(
     "Note: this app works only wiht AIKEN formated quiz that contains 'A' to 'E' possible answers.",
     "All the questions should be separated by an empty row.",
@@ -50,7 +51,7 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic required to draw a histogram ----
+# Define server part
 server <- function(input, output) {
   sorted <-  shiny::reactive({
     req(input$file1)
